@@ -2596,6 +2596,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2072793701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2960322034764085602, guid: 51ea8db9989862c40a078c94abc7ff59, type: 3}
+  m_PrefabInstance: {fileID: 1812083674284501621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2072793705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072793701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4650d5ef4f74e246a7051e9c934e087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  _maskedDescription: "Oksijen t\xFCp\xFC"
+  _realDescription: "Oksijen t\xFCp\xFC ama korkun\xE7lu"
+  _interactionDistance: 3
 --- !u!1 &2122627188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlowerBorderUI
   _borderImage: {fileID: 1249526088}
+  _visibleAlpha: 0.6
+  _invisibleAlpha: 0
   _fadeSpeed: 3
 --- !u!1001 &1812083674284501621
 PrefabInstance:
@@ -2702,7 +2724,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2960322034764085602, guid: 51ea8db9989862c40a078c94abc7ff59, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2072793705}
   m_SourcePrefab: {fileID: 100100000, guid: 51ea8db9989862c40a078c94abc7ff59, type: 3}
 --- !u!1001 &3213706520978813525
 PrefabInstance:
