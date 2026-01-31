@@ -10,6 +10,7 @@ public class PlayerInputHandler : MonoBehaviour
     public Vector2 MoveInput => _moveInput;
     
     public event Action OnJump;
+    public event Action OnMaskToggle;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class PlayerInputHandler : MonoBehaviour
         _playerControls.Player.Move.performed += OnMovePerformed;
         _playerControls.Player.Move.canceled += OnMoveCanceled;
         _playerControls.Player.Jump.performed += OnJumpPerformed;
+        _playerControls.Player.Mask.performed += OnMaskTogglePerformed;
     }
 
     private void OnDisable()
@@ -29,6 +31,7 @@ public class PlayerInputHandler : MonoBehaviour
         _playerControls.Player.Move.performed -= OnMovePerformed;
         _playerControls.Player.Move.canceled -= OnMoveCanceled;
         _playerControls.Player.Jump.performed -= OnJumpPerformed;
+        _playerControls.Player.Mask.performed -= OnMaskTogglePerformed;
         _playerControls.Disable();
     }
 
@@ -45,5 +48,10 @@ public class PlayerInputHandler : MonoBehaviour
     private void OnJumpPerformed(InputAction.CallbackContext context)
     {
         OnJump?.Invoke();
+    }
+
+    private void OnMaskTogglePerformed(InputAction.CallbackContext context)
+    {
+        OnMaskToggle?.Invoke();
     }
 }
