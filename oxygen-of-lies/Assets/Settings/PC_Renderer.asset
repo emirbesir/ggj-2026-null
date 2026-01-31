@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: FronkonGames.Retro.Noir::FronkonGames.Retro.Noir.Noir
   m_Active: 1
   settings:
-    intensity: 1
+    intensity: 0.8
     method: 2
-    noirIntensity: 1
+    noirIntensity: 0.6
     ditherSpread: 1
     ditherDensity: 1
     ditherColorBlend: 16

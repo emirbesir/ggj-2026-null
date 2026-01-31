@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MaskVisualFeedback
   _screenOverlay: {fileID: 2195113047954177960}
   _maskOnColor: {r: 0.9, g: 0.95, b: 1, a: 0.019607844}
-  _maskOffColor: {r: 0.4392157, g: 0.15, b: 0.1, a: 0.5882353}
+  _maskOffColor: {r: 0.4392157, g: 0.15, b: 0.1, a: 0.3882353}
   _colorTransitionDuration: 0.3
   _flowerBorder: {fileID: 2989510067075379402}
   _borderVisibleAlpha: 0.6
