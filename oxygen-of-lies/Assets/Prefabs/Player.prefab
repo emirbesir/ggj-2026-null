@@ -290,9 +290,10 @@ GameObject:
   - component: {fileID: 5210860394966674143}
   - component: {fileID: 6365510698402722860}
   - component: {fileID: 6173310467139071057}
-  - component: {fileID: 7209215781097865335}
   - component: {fileID: 4101228639922154000}
   - component: {fileID: 5679595137449475655}
+  - component: {fileID: 6053808544532485026}
+  - component: {fileID: 8815498133362566697}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -427,26 +428,6 @@ MonoBehaviour:
   _oxygenRecoveryRate: 5
   _maxHealth: 100
   _suffocationDamageRate: 15
---- !u!114 &7209215781097865335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7371517671162867836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72f7f72ccdc93224ca8df64d9cd9d794, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractionController
-  _interactionPanel: {fileID: 0}
-  _interactionText: {fileID: 0}
-  _crosshairHighlight: {fileID: 0}
-  _maxInteractionDistance: 5
-  _interactableLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  _textDisplayDuration: 3
 --- !u!114 &4101228639922154000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +460,38 @@ MonoBehaviour:
   _handAnimator: {fileID: 7207027712653181459}
   _maskOnTrigger: MaskOn
   _maskOffTrigger: MaskOff
+--- !u!114 &6053808544532485026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371517671162867836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020881523ea74204a9fea1874fb9cb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnifiedInteractionController
+  _maxDistance: 3
+  _interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  _promptPanel: {fileID: 0}
+  _promptText: {fileID: 0}
+  _progressBarPanel: {fileID: 0}
+  _progressFill: {fileID: 0}
+--- !u!114 &8815498133362566697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371517671162867836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c8cfe00a0ac7f48aa7d9e3d0d6d2eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameFlags
 --- !u!1001 &2639772726993264587
 PrefabInstance:
   m_ObjectHideFlags: 0
